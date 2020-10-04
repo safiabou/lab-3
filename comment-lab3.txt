@@ -1,0 +1,76 @@
+all comments needed for lab 3
+
+Part 1
+1 create lab 3 file and open terminal on that file.
+2-we can be sure about the place by inserting "PWD" command
+3-Should clone => git clone + URL
+
+Part 2 : Starting the LAB
+
+4- la liste des fichiers : 4 fichiers 
+5- la taille du fichier sardar n'est pas correcte.
+To check how much space a file or a directory takes, the du (Disk Usage) command is used. However, the disk usage summary will show disk block numbers instead of the usual size format.
+6- la taille du fichier Microsoft 
+en Utilisant Du command : 36K
+En ulisant ls -lrt command :34359 oct
+7-Stat microsoft
+8-Pour lister all files : ls -a 
+  pour lister only hidden file : ls -d .*
+ In our case yes we have
+9- Fichier plus ancien en premier et plus recent en dernier => ls -lrt
+10- ls -s   => l'ordre des fichiers  le plus grand en premier & ls -r c'est l'inverse
+11- afficher le contenue du fichier : cat answering-machine.txt
+12- Afficher le contenue avec l'outil PLUS => cat answering-machine.txt | more
+13- sudo apt install vim
+14- Pour rajouter un texte a la fin du fichier il faut : 
+- Tout d'abord acceder a 5AS05-partie3 en tapant : cd 5AS05-partie3
+- Afficher le fichier => vim answering-machine.txt
+le fichier s'affiche : move the cursor : G to go to the end or just "CTRL +f " to move forward until the end 
+- click on "i" to insert then write what we need 
+- save and quit by clicking on echap  :  wq 
+- Si on veut pas sauvegarder on click ech : q!
+15- pour supprimer le mot : 
+- chercher le mot : /le mot
+- supprimer : sois lettre par lettre en tapant x sois le mot complet dw
+16- sauvegarder : echap : w
+17- on peut aussi utiliser la command ?BEEP pour chercher le mot "BEEP"
+- if we want to select some words : enetr visual mode by clicking on v then select using cursor 
+20 - pour afficher 20 dernieres lignes du fichier sardar3. 
+acceder a sardar : cd sardar
+puis tapper la commande: tail -20 sardar3.txt
+21- chercher un mot dans un fichier : grep + le mot+ le nom du fichier
+22- chercher un mot dans tous les fichiers du repertoir : grep -r + mot +./
+24- pour modifier le nom d'un fichier   :  mv + nom_fichier1 + nouveau_nom
+25_ pour afficher le nom du repertoire actuel  :  pwd    (print working directory)
+26- pour deplacer le fichier sardar3.txt depuis sn repertoir vers le repertoir parent : mv sardar3.txt lab3
+29- pour creer un repertoir archive : aller au repertoir puis : tar -cvf "nommer.tar" " le nom du fichier qu'on veut archiver"
+30- pour creer un lien symbolic : ln -s + nom du dossier + nom du lien
+31- en accedant a sardar et suprimant le fichier sardar2.txt via la commande : mv sardar2.txt, ce dernier est aussi suprimé dans le lien symbolic cree.
+32- en ajoutant " MASTER SC " au fichier sardar1 dans sardar , l'expression d'ajoute aussi dans le fichier du lien symbolic.
+33- droit d'accées des fichiers : chmod g+w sardar1.txt ( dans le cas ou on veut ajouter droit d'ecrire au group)
+36- creer une archive .tar.bzd2 : tar jcvf 5AS05-partie3.tar.bz2 5AS05-partie3
+37-lister les fichiers sans decompresser: tar jtvf 5AS05-partie3.tar.bz2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
